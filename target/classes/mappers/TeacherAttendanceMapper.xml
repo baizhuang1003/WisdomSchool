@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tianyuan.WisdomTeacherServer.mapper.TeacherAttendanceMapper">
+    <select id="selectTeacherAttendance"
+            resultType="com.tianyuan.WisdomTeacherServer.bean.SchoolAttendanceRecord">
+        SELECT * from  school_attendance_record where type=#{type} and user_id=#{userid}
+    </select>
+
+    <select id="monthlyAttendanc" resultType="com.tianyuan.WisdomTeacherServer.bean.AttendanceMonthTotal">
+    SELECT * FROM attendance_month_total WHERE  atten_year=#{year} AND  atten_mon=#{month} AND teacher_id =#{teacherid}
+    </select>
+</mapper>
