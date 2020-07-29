@@ -16,7 +16,7 @@ public class StudentleaveServiceImpl implements StudentleaveService {
 
 
     @Override
-    public StudentLeave findAll() {
+    public List<StudentLeave> findAll() {
         return studentLeaveMapper.findAll();
     }
 

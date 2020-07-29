@@ -3,6 +3,7 @@ package com.tianyuan.WisdomTeacherServer.controller;
 
 import com.tianyuan.WisdomTeacherServer.bean.AttendanceMonthTotal;
 import com.tianyuan.WisdomTeacherServer.bean.SchoolAttendanceRecord;
+import com.tianyuan.WisdomTeacherServer.bean.TeacherLeaveRecord;
 import com.tianyuan.WisdomTeacherServer.service.TeacherAttendanceService;
 import com.tianyuan.WisdomTeacherServer.vo.Result;
 
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
+import java.util.List;
 
 @ApiModel("查询勤率")
 @RestController
@@ -27,7 +29,7 @@ public class TeacherAttendanceController {
                                           @ApiParam("用户的类型") @PathVariable("type") String type,
                                           @ApiParam("今天的日期") @PathVariable String day) throws ParseException {
         // TODO 缺少参数校验
-        SchoolAttendanceRecord schoolAttendanceRecord = teacherAttendanceService.selectTeacherAttendance(day, userId, type);
+        List<SchoolAttendanceRecord> schoolAttendanceRecord = teacherAttendanceService.selectTeacherAttendance(day, userId, type);
         if (schoolAttendanceRecord != null){
             return  new Result(true,"查询成功",schoolAttendanceRecord);
         }
@@ -50,5 +52,32 @@ public class TeacherAttendanceController {
              return new Result(false,"查询失败");
         }
 
+    }
+
+    @ApiOperation("请假记录")
+    @PostMapping("/monthlyAttendance/{dates}/{teacherid}/{type}")
+    public Result laveRecord(@ApiParam("查询的日期") @PathVariable String dates[],
+                             @ApiParam("教师的id") @PathVariable String  teacherid,
+                             @ApiParam("查询的状态:事假1，病假2，全部3") @PathVariable String type){
+        try {
+            List<TeacherLeaveRecord> teacherLeaveRecord = teacherAttendanceService.laveRecord(dates,teacherid,type);
+            return new Result(true,"查询成功",teacherLeaveRecord);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false,"查询失败");
+        }
+    }
+
+    @ApiOperation("请假")
+    @RequestMapping(value = "/askForLeave",method = RequestMethod.POST)
+    public Result askForLeave(@ApiParam("教师请假对象") @RequestBody TeacherLeaveRecord teacherLeaveRecord){
+
+        try {
+            teacherAttendanceService.askForLeave(teacherLeaveRecord);
+            return new Result(true,"申请成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false,"申请失败");
+        }
     }
 }

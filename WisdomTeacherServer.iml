@@ -29,34 +29,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://D:/IEAD/Maven/repository_pinyougou/commons-codec/commons-codec/1.14/commons-codec-1.14.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -263,15 +236,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://D:/IEAD/Maven/repository_pinyougou/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -309,15 +273,6 @@
       <library>
         <CLASSES>
           <root url="jar://D:/IEAD/Maven/repository_pinyougou/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -992,51 +947,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/poi/poi-ooxml-schemas/4.1.0/poi-ooxml-schemas-4.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/IEAD/Maven/repository_pinyougou/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://D:/IEAD/Maven/repository_pinyougou/com/auth0/java-jwt/3.4.0/java-jwt-3.4.0.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -1056,6 +966,15 @@
       <library>
         <CLASSES>
           <root url="jar://D:/IEAD/Maven/repository_pinyougou/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.1.1/mybatis-spring-boot-autoconfigure-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/IDEATool/Maven/repository_pinyougou/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

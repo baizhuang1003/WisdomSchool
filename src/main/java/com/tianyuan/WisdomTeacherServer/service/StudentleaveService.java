@@ -10,7 +10,7 @@ public interface StudentleaveService {
      *  查询所有的
      * @return
      */
-    StudentLeave findAll();
+    List<StudentLeave> findAll();
 
     /**
      *  根据学生id删除

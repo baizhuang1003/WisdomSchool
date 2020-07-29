@@ -11,7 +11,7 @@ public interface StudentLeaveMapper {
      *  查询所有的学生
      * @return
      */
-    StudentLeave findAll();
+    List<StudentLeave> findAll();
 
     /**
      *  根据学生id删除

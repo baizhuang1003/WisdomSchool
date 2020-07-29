@@ -177,9 +177,10 @@ public class StudentLeaveController {
         @ApiOperation(value = "查询所有的学生信息")
         @GetMapping("/student/findAll")
         public Result findAll(){
-            StudentLeave student = studentleaveService.findAll();
-            if (student != null){
-                return new Result(true,"查询成功",student);
+            List<StudentLeave> studentAll = studentleaveService.findAll();
+
+            if (studentAll != null){
+                return new Result(true,"查询成功",studentAll);
             }else {
                 return new Result(false,"查询失败");
             }
